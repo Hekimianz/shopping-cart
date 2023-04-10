@@ -1,6 +1,5 @@
 import React from "react";
 import "./Home.css";
-import logo from "../assets/cover.png";
 import mountain from "../assets/mountain.jpg";
 import models1 from "../assets/models1.jpg";
 import models2 from "../assets/models2.jpg";
@@ -8,20 +7,6 @@ import models2 from "../assets/models2.jpg";
 export default function Home() {
   return (
     <div id="home-cont">
-      <nav id="home-nav-cont">
-        <img id="nav-logo" src={logo} alt="black sky logo" />
-        <div id="nav-links-cont">
-          <a className="nav-link" href="#">
-            Home
-          </a>
-          <a className="nav-link" href="#">
-            Shop
-          </a>
-          <a className="nav-link" href="#">
-            Contact
-          </a>
-        </div>
-      </nav>
       <section id="home-main-cont">
         <div id="main-top-cont">
           <div id="main-top-left">
