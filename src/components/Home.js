@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import mountain from "../assets/mountain.jpg";
+import mountain from "../assets/hero.jpg";
 import models1 from "../assets/models1.jpg";
 import models2 from "../assets/models2.jpg";
 
