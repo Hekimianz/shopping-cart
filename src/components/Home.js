@@ -13,7 +13,9 @@ export default function Home() {
             <h1>
               Explore The <span className="heading-highlight">Unknown</span>
             </h1>
-            <button>SHOP</button>
+            <a href="/shop">
+              <button>SHOP</button>
+            </a>
           </div>
           <img id="mountain" src={mountain} alt="mountain with white halo" />
         </div>
@@ -26,7 +28,7 @@ export default function Home() {
           </p>
         </div>
         <div id="main-bot-cont">
-          <img id="gallery" src={models2} />
+          <img id="gallery" src={models2} alt="models" />
         </div>
       </section>
     </div>

@@ -5,22 +5,43 @@ import logo from "./assets/cover.png";
 import RouteSwitch from "./RouteSwitch";
 
 function App() {
+  const [activeNav, setActiveNav] = React.useState(window.location.pathname);
+
+  console.log(activeNav);
   return (
-    <div>
+    <div id="test">
       <nav id="home-nav-cont">
         <img id="nav-logo" src={logo} alt="black sky logo" />
         <div id="nav-links-cont">
-          <a className="nav-link" href="/">
+          <a
+            className={activeNav === "/" ? "nav-link activeNav" : "nav-link"}
+            href="/"
+          >
             Home
           </a>
-          <a className="nav-link" href="/shop">
+          <a
+            className={
+              activeNav === "/shop" ? "nav-link activeNav" : "nav-link"
+            }
+            href="/shop"
+          >
             Shop
           </a>
         </div>
       </nav>
       <RouteSwitch />
       <footer>
-        <span>Made by Aram Hekimian</span>
+        <span>
+          Made by{" "}
+          <a
+            id="footer-link"
+            href="https://github.com/Hekimianz"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Aram Hekimian
+          </a>
+        </span>
       </footer>
     </div>
   );

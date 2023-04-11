@@ -6,13 +6,17 @@ html,
 #root {
   height: 100%;
   width: 100%;
-  background-color: #0c4770;
   font-family: "Montserrat", sans-serif;
 }
 
 nav {
   background-color: #156eac;
 }
+
+img {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
 #home-nav-cont {
   min-height: 50px;
   border-bottom: 1px solid white;
@@ -28,6 +32,7 @@ nav {
 
 #nav-logo {
   width: 150px;
+  box-shadow: none;
 }
 
 #nav-links-cont {
@@ -41,6 +46,9 @@ nav {
   color: white;
   text-decoration: none;
   transition: 0.3s transform;
+}
+.activeNav {
+  text-decoration: underline;
 }
 
 .nav-link:hover {
@@ -56,4 +64,14 @@ footer {
   align-items: center;
   background-color: #0c4770;
   color: white;
+}
+
+#footer-link {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s all;
+}
+
+#footer-link:hover {
+  color: #f6575e;
 }
