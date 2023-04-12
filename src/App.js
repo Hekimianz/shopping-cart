@@ -1,17 +1,17 @@
 import React from "react";
 import "./App.css";
-import Home from "./components/Home";
 import logo from "./assets/cover.png";
 import RouteSwitch from "./RouteSwitch";
 
 function App() {
-  const [activeNav, setActiveNav] = React.useState(window.location.pathname);
+  const [activeNav] = React.useState(window.location.pathname);
 
-  console.log(activeNav);
   return (
-    <div id="test">
+    <div>
       <nav id="home-nav-cont">
-        <img id="nav-logo" src={logo} alt="black sky logo" />
+        <a href="/">
+          <img id="nav-logo" src={logo} alt="black sky logo" />
+        </a>
         <div id="nav-links-cont">
           <a
             className={activeNav === "/" ? "nav-link activeNav" : "nav-link"}

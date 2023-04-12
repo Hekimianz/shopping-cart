@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+}
+#shop-cont {
+  background-image: url(../../src/assets/Sprinkle.svg);
+  background-size: cover;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.row-cards {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.row-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.row-heading {
+  color: white;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #f6575e;
+}
+
+.card-cont {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.image-cont {
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border-radius: 8px;
+  transition: 0.3s all;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image-cont:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: scale(1.05);
+}
+
+.card-name {
+  padding-top: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .card-cont {
+    width: 400px;
+    height: 500px;
+  }
+
+  .image-cont {
+    width: 400px;
+    height: 500px;
+  }
+}
