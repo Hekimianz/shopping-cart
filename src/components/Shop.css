@@ -24,10 +24,11 @@
 
 .row-heading {
   color: white;
-  padding-left: 10px;
-  padding-bottom: 20px;
-  text-decoration: underline;
-  text-decoration-color: #f6575e;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #f6575e;
+  width: 400px;
 }
 
 .card-cont {
