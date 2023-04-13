@@ -4,12 +4,12 @@
 #shop-cont {
   background-image: url(../../src/assets/Sprinkle.svg);
   background-size: cover;
+  background-position: center;
 }
 
 .row {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px;
   padding-top: 20px;
 }
 
@@ -17,6 +17,8 @@
   display: flex;
   overflow-y: hidden;
   overflow-x: scroll;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .row-cards::-webkit-scrollbar {
@@ -27,7 +29,6 @@
   color: white;
   margin-left: 10px;
   margin-bottom: 15px;
-  padding-bottom: 5px;
 }
 
 .card-cont {
@@ -82,6 +83,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 2px solid #ac5416;
+  cursor: pointer;
+}
+
+#cart:hover > #cartIcon,
+#cart:hover > #cartNum {
+  transform: scale(1.1);
 }
 
 #cartIcon {
@@ -89,6 +97,8 @@
   width: 45px;
   filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(114deg)
     brightness(108%) contrast(101%);
+  -webkit-user-drag: none;
+  transition: 0.3s all;
 }
 
 #cartNum {
@@ -98,6 +108,7 @@
   margin-bottom: 15px;
   margin-left: 5px;
   user-select: none;
+  transition: 0.3s all;
 }
 @media screen and (min-width: 1000px) {
   .card-cont {

@@ -22,9 +22,9 @@ export default function Home() {
         <div id="main-mid-cont">
           <img id="models1" src={models1} alt="two models" />
           <p id="paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim
-            tortor at auctor urna.{" "}
+            Discover the dark side of fashion with Black Sky. Our collection of
+            versatile clothing will help you unleash your style and find your
+            inner rebel. Shop now and step into the sky.{" "}
           </p>
         </div>
         <div id="main-bot-cont">

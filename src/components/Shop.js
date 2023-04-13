@@ -37,9 +37,19 @@ export default function Shop() {
           <Card image={tshirt6} name="Stained Shirt" price="14.99" />
         </div>
       </section>
+      <section className="row">
+        <h2 className="row-heading">Another Collection</h2>
+        <div className="row-cards">
+          <Card image={hoodie} name="Hoodie" price="39.99" />
+          <Card image={leggings} name="Leggings" price="29.99" />
+          <Card image={tshirt1} name="Rider Shirt" price="25.99" />
+          <Card image={tshirt2} name="Cool Shirt" price="19.99" />
+          <Card image={tshirt3} name="Rider Shirt(No Sleeves)" price="25.99" />
+        </div>
+      </section>
       <div id="cart">
         <img id="cartIcon" src={cart} alt="cart" />
-        <span id="cartNum">5</span>
+        <span id="cartNum">0</span>
       </div>
     </div>
   );
