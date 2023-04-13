@@ -50,6 +50,8 @@ img {
 }
 .activeNav {
   text-decoration: underline;
+  text-decoration-color: #fb9297;
+  color: #fff8f8;
 }
 
 .nav-link:hover {
@@ -71,8 +73,12 @@ footer {
   color: white;
   text-decoration: none;
   transition: 0.3s all;
+  font-weight: 500;
+  color: #7ac1f4;
+  transition: 0.3s all;
 }
 
 #footer-link:hover {
   color: #f6575e;
+  font-size: 1.05em;
 }
