@@ -9,7 +9,8 @@
 .row {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .row-cards {
@@ -27,8 +28,6 @@
   margin-left: 10px;
   margin-bottom: 15px;
   padding-bottom: 5px;
-  border-bottom: 2px solid #f6575e;
-  width: 400px;
 }
 
 .card-cont {
@@ -70,6 +69,36 @@
   padding-top: 10px;
 }
 
+#cart {
+  height: 75px;
+  width: 75px;
+  background-color: #09304d;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 31px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cartIcon {
+  box-shadow: none;
+  width: 45px;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(114deg)
+    brightness(108%) contrast(101%);
+}
+
+#cartNum {
+  color: #f6575e;
+  position: absolute;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  user-select: none;
+}
 @media screen and (min-width: 1000px) {
   .card-cont {
     width: 400px;
@@ -79,5 +108,19 @@
   .image-cont {
     width: 400px;
     height: 500px;
+  }
+
+  #cart {
+    height: 100px;
+    width: 100px;
+  }
+
+  #cartIcon {
+    width: 60px;
+  }
+
+  #cartNum {
+    font-size: 1.5em;
+    margin-bottom: 20px;
   }
 }

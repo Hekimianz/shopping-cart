@@ -1,6 +1,7 @@
 import React from "react";
 import "./Shop.css";
 import Card from "./Card";
+import cart from "../../src/assets/cart.svg";
 // clothing imgs
 import hoodie from "../../src/assets/hoodie.png";
 import leggings from "../../src/assets/leggings.png";
@@ -36,6 +37,10 @@ export default function Shop() {
           <Card image={tshirt6} name="Stained Shirt" price="14.99" />
         </div>
       </section>
+      <div id="cart">
+        <img id="cartIcon" src={cart} alt="cart" />
+        <span id="cartNum">5</span>
+      </div>
     </div>
   );
 }
