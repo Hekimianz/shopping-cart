@@ -1,7 +1,9 @@
 import React from "react";
 import "./Shop.css";
 import Card from "./Card";
+import Item from "../components/Item";
 import cart from "../../src/assets/cart.svg";
+import close from "../../src/assets/close.svg";
 // clothing imgs
 import hoodie from "../../src/assets/hoodie.png";
 import leggings from "../../src/assets/leggings.png";
@@ -15,6 +17,13 @@ import tshirt5 from "../../src/assets/tshirt5.png";
 import tshirt6 from "../../src/assets/tshirt6.png";
 
 export default function Shop() {
+  const [cartOpen, setCartOpen] = React.useState(false);
+  const [cartItems, setCartItems] = React.useState([]);
+
+  function toggleCart() {
+    setCartOpen(!cartOpen);
+  }
+
   return (
     <div id="shop-cont">
       <section className="row">
@@ -47,10 +56,21 @@ export default function Shop() {
           <Card image={tshirt3} name="Rider Shirt(No Sleeves)" price="25.99" />
         </div>
       </section>
-      <div id="cart">
+      <div onClick={toggleCart} id="cart">
         <img id="cartIcon" src={cart} alt="cart" />
-        <span id="cartNum">0</span>
+        <span id="cartNum">{cartItems.length}</span>
       </div>
+      {cartOpen && (
+        <div id="open-cart">
+          <img
+            onClick={toggleCart}
+            id="close"
+            alt="close cart icon"
+            src={close}
+          />
+          <Item />
+        </div>
+      )}
     </div>
   );
 }
