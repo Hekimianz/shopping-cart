@@ -7,8 +7,8 @@ export default function RouteSwitch() {
   return (
     <HashRouter basename="/">
       <Routes>
-        <Route path="/" Component={<Home />} />
-        <Route path="/shop" Component={<Shop />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </HashRouter>
   );
