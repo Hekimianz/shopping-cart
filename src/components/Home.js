@@ -14,7 +14,7 @@ export default function Home() {
               Explore The <span className="heading-highlight">Unknown</span>
             </h1>
             <a href="/shop">
-              <button>SHOP</button>
+              <button id="button">SHOP</button>
             </a>
           </div>
           <img id="mountain" src={mountain} alt="mountain with white halo" />

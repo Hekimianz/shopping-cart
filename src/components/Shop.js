@@ -20,6 +20,11 @@ import tshirt6 from "../../src/assets/tshirt6.png";
 export default function Shop() {
   const [cartOpen, setCartOpen] = React.useState(false);
   const [cartItems, setCartItems] = React.useState([]);
+  const cartSum = React.useRef();
+
+  let cartPrices = cartItems.map((x) => Number(x.price.replace(/^./, "")));
+  cartSum.current = cartPrices.reduce((a, b) => a + b, 0);
+  cartSum.current = cartSum.current.toFixed(2);
 
   function addToCart(e) {
     let node = e.target.parentNode.parentNode;
@@ -61,6 +66,16 @@ export default function Shop() {
       />
     );
   });
+
+  const greyed = {
+    backgroundColor: "#8daf97",
+    cursor: "not-allowed",
+  };
+
+  const active = {
+    backgroundColor: "#2ea44f",
+    cursor: "pointer",
+  };
 
   return (
     <div id="shop-cont">
@@ -107,6 +122,20 @@ export default function Shop() {
             src={close}
           />
           {items}
+          {cartItems.length > 0 && <hr />}
+          {cartItems.length > 0 && (
+            <span id="total">
+              Total: <span id="cost">${cartSum.current}</span>
+            </span>
+          )}
+          <button
+            style={cartItems.length > 0 ? active : greyed}
+            className="button-3"
+            id="purchase-btn"
+            type="button"
+          >
+            Purchase
+          </button>
         </div>
       )}
     </div>
