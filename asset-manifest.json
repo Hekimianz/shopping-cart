@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/shopping-app/static/css/main.4dd0f2a2.css",
+    "main.js": "/shopping-app/static/js/main.2ffea168.js",
+    "static/media/tanktop.png": "/shopping-app/static/media/tanktop.63fc3238eabc1d898c1d.png",
+    "static/media/tshirt6.png": "/shopping-app/static/media/tshirt6.85eb6800102f94604921.png",
+    "static/media/tshirt5.png": "/shopping-app/static/media/tshirt5.97f15437fe842841487d.png",
+    "static/media/tshirt1.png": "/shopping-app/static/media/tshirt1.82f7f20ba6dfcf495816.png",
+    "static/media/hoodie.png": "/shopping-app/static/media/hoodie.cdc2a92e3ad1e9b6bf63.png",
+    "static/media/polo.png": "/shopping-app/static/media/polo.624f6e61090804f7c677.png",
+    "static/media/tshirt4.png": "/shopping-app/static/media/tshirt4.23051d9457a3cb01e2d5.png",
+    "static/media/tshirt3.png": "/shopping-app/static/media/tshirt3.b0a6b78e7c65ba44c6b2.png",
+    "static/media/tshirt2.png": "/shopping-app/static/media/tshirt2.fcb5789761d92bf93b75.png",
+    "static/media/hero.jpg": "/shopping-app/static/media/hero.92364435e1ff60dc727b.jpg",
+    "static/media/models2.jpg": "/shopping-app/static/media/models2.c4b9bc7e9e662617f16b.jpg",
+    "static/media/models1.jpg": "/shopping-app/static/media/models1.baacec79f90dc4e6b39d.jpg",
+    "static/media/leggings.png": "/shopping-app/static/media/leggings.ca31a55f88aa0621562e.png",
+    "static/media/cover.png": "/shopping-app/static/media/cover.fb34276d35b22c103db8.png",
+    "static/media/Sprinkle.svg": "/shopping-app/static/media/Sprinkle.95029a2b551b46c181de.svg",
+    "index.html": "/shopping-app/index.html",
+    "static/media/cart.svg": "/shopping-app/static/media/cart.30255b02b4d20766b4123ccb0aa6df55.svg",
+    "static/media/delete.svg": "/shopping-app/static/media/delete.24315ab37634d58b5ce35a16092b6731.svg",
+    "static/media/close.svg": "/shopping-app/static/media/close.c76ad28c33323dfe86ec1e4bcf9c5b6c.svg",
+    "main.4dd0f2a2.css.map": "/shopping-app/static/css/main.4dd0f2a2.css.map",
+    "main.2ffea168.js.map": "/shopping-app/static/js/main.2ffea168.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dd0f2a2.css",
+    "static/js/main.2ffea168.js"
+  ]
+}
